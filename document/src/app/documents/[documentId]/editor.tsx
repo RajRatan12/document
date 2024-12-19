@@ -9,6 +9,9 @@ import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import TableRow from '@tiptap/extension-table-row'
 import Underline from '@tiptap/extension-underline'
+import FontFamily from '@tiptap/extension-font-family'
+import TextStyle from '@tiptap/extension-text-style'
+
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 
@@ -50,6 +53,8 @@ export const Editor = () => {
         },
         extensions: [
             StarterKit,
+            FontFamily,
+            TextStyle,
             Underline,
             Image,
             ImageResize,
